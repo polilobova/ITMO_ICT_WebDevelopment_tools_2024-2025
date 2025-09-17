@@ -8,6 +8,10 @@ from bs4 import BeautifulSoup
 from sqlmodel import SQLModel, select, Session, create_engine
 from models import Article, Hub, ArticleHub
 
+"""
+All done in 9.90s
+"""
+
 SYNC_DATABASE_URL = "sqlite:///./lab1.db"
 
 engine = create_engine(

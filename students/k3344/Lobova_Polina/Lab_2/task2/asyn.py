@@ -9,6 +9,10 @@ from connection import get_async_session, init_db
 from sqlmodel import select
 from models import Article, Hub, ArticleHub
 
+"""
+All done in 1.67s
+"""
+
 HABR_FLOWS = [
     "https://habr.com/ru/flows/develop/articles/",
     "https://habr.com/ru/flows/admin/articles/",
@@ -97,3 +101,6 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
+
+
+#
