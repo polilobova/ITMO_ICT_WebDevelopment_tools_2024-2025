@@ -5,10 +5,11 @@ from sqlmodel import SQLModel
 from routes.auth import router as auth_router
 
 app = FastAPI(title="Finance Manager API")
-
+''' 
 @app.on_event("startup")
 def on_startup():
     SQLModel.metadata.create_all(engine)
+'''
 
 app.include_router(auth_router)
 app.include_router(users.router)
